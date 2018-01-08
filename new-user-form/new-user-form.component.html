@@ -1,0 +1,52 @@
+<div class='container' >
+	<a routerLink="/login"> Login </a>
+
+	<h1>
+		Welcome to qoqa
+	</h1>
+
+	<div>
+		
+		<form (ngSubmit)="onSubmit()" #NewUserForm="ngForm">
+		
+			<div class="form-group">
+				
+				<input type="text" class="form-control" placeholder="full name" id="full_name" required minlength="9">
+				
+			</div>
+			<p>
+				press enter or click checkmark when done
+			</p>
+
+
+			<div class="form-group">
+				
+				<input type="Number" class="form-control" placeholder="phonenumber" id="phone_number" required>
+				
+			</div>
+
+			<p>
+				press enter or click checkmark when done
+			</p>
+
+			<div class="form-group">
+				
+				<input type="password" class="form-control" placeholder="password" id="password" required>
+				
+				
+			</div>
+
+			<p>
+				press enter or click checkmark when done
+			</p>
+
+			<button hidden type="Submit" class="btn btn-success" [disabled] = "!NewUserForm.form.valid">Submit</button>
+
+
+
+		</form>
+	</div>
+</div>
+
+
+
