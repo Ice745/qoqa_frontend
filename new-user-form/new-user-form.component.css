@@ -1,0 +1,104 @@
+h1{
+	text-align: center;
+	color: grey;
+	font-family: calibri;
+	padding-top: 240px;
+	padding-bottom: 50px;
+	font-size: 32px;
+	cursor: default;
+}
+
+p{
+	color:grey;
+	font-size: 15px;
+	position: relative;
+	opacity: .4;
+}
+
+a{
+	float: right;
+	position: relative;	
+	color: rgb(0, 191, 255);
+	font-size: 20px;
+	cursor: pointer;
+	font-family: arial;	
+	margin-right: 70px;
+	margin-top: 20px;
+}
+
+div[class='container']{
+	max-width: 100%;
+	max-height: auto;
+	border:none;
+	margin: auto;
+	border-color: #eee;
+	background: url('meh.jpg') no-repeat center;
+	background-size: cover; 
+	position: relative;
+	text-align: center;
+	font-family: arial;
+}
+
+input[type="text"]{
+	width: 35%;
+	padding: 20px 28px;
+	border-radius: 15px;
+	border:none;
+	padding-left: 60px;
+	background-image: url('user_icon.png');
+	background-position: 15px 15px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-color: white;
+	opacity: 0.8;
+	box-shadow: 2px 0px 30px 5px lightgrey;
+	font-size: 15px;
+
+}
+
+input[type="number"]{
+	width: 35%;
+	padding: 20px 28px;
+	border-radius: 15px;
+	border:none;
+	padding-left: 60px;
+	background-image: url('user_icon.png');
+	background-position: 15px 15px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-color: white;
+	opacity: 0.3;
+	box-shadow: 2px 0px 30px 5px lightgrey;
+	font-size: 15px;
+}
+
+
+input[type="password"]{
+	width: 35%;
+	padding: 20px 28px;
+	border-radius: 15px;
+	border:none;
+	padding-left: 60px;
+	background-image: url('pass_icon.png');
+	background-position: 15px 15px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-color: white;
+	opacity: 0.3;
+	box-shadow: 2px 0px 30px 5px lightgrey;
+	font-size: 15px
+}
+
+input:focus{
+	opacity: 0.8;
+}
+
+input{
+	margin-bottom: 40px;
+}
+
+a:hover{
+	color: red;
+}
+
+
