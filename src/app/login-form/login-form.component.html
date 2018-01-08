@@ -1,0 +1,50 @@
+<div class="container">
+  <header>
+    <!--<div id = "logo">
+      <img src="Logo-big.jpg" alt="logo"/>
+    </div>-->
+
+    <nav>
+      <a routerLink="/signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <!--<div id = "logo1">
+    <img src="logo.jpg" alt="logo"/>
+  </div>-->
+
+  <h1>Welcome to qoqa</h1>
+
+  <form id="log" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+
+    <div class="form-group">
+      <input type="tel" class="form-control" placeholder="phonenumber" id="phone"
+      size="9" minlength="1" maxlength="9" required
+      [(ngModel)]="lg.phone">
+      <span>
+          <button id="click" type="button" class="button" 
+          (keyup.enter)="newLogin()"
+          (click)="newLogin(); loginForm.reset()">✓</button>
+      </span>
+      <span class = "message">press enter or click checkmark when done</span>
+      <!--<input id = "accept" type="submit" align="center" value="✓" class="button"/>-->
+      <!--<input type="image" src="Check.jpg" alt="Submit" width="48" height="48" class="button"/>-->
+      
+    </div>
+
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="password" id="password" required
+      [(ngModel)]="lg.password">
+      <span>
+      <button id="click2" type="button" class="button" 
+      (keyup.enter)="newLogin()"
+      (click)="newLogin(); loginForm.reset()">✓</button>
+      </span>
+      <span class = "message2">press enter or click checkmark when done</span>
+
+      <!--<input id = "accept" type="submit" value="✓" class=
+      (click) = "newLogin(); loginForm.reset()"/>-->
+    </div>
+  </form>
+
+</div>
